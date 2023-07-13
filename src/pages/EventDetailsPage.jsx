@@ -15,7 +15,7 @@ export default function EventDetailsPage() {
   const findCurrEvent = meetupData.meetups.find(({ id }) => id === eventID);
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 items-center">
       <div>
         <button
           className="bg-red-500 hover:bg-red-400 rounded-full p-3 text-white"
