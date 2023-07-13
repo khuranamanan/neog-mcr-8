@@ -8,7 +8,7 @@ function RsvpModal({ event }) {
   const [email, setEmail] = useState("");
   const [rsvpComplete, setRsvpComplete] = useState(false);
   const [paymentRequired] = useState(event.isPaid);
-  const [disableRSVP] = useState(event.eventStartTime < new Date());
+  const disableRSVP = new Date(event.eventStartTime) < new Date();
 
   function closeModal() {
     setIsOpen(false);
@@ -37,7 +37,7 @@ function RsvpModal({ event }) {
             disabled={disableRSVP || rsvpComplete}
             className="rounded-md bg-red-500 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 disabled:opacity-50"
           >
-            RSVP
+            {disableRSVP ? "Event Passed" : "RSVP"}
           </button>
         )}
         {rsvpComplete && (

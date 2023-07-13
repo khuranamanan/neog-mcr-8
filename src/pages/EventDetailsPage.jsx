@@ -15,10 +15,10 @@ export default function EventDetailsPage() {
   const findCurrEvent = meetupData.meetups.find(({ id }) => id === eventID);
 
   return (
-    <div className="flex flex-col gap-2 items-center">
+    <div className="flex flex-col gap-2 items-center p-4">
       <div>
         <button
-          className="bg-red-500 hover:bg-red-400 rounded-full p-3 text-white"
+          className="bg-red-500 hover:bg-red-400 rounded-full p-3 text-white self-start"
           onClick={() => navigate(-1)}
         >
           <AiOutlineArrowLeft size={15} />
