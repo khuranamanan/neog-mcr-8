@@ -98,19 +98,7 @@ export default function EventDetailsPage() {
           </li>
         ))}
       </ul>
-      <div>
-        {/* {findCurrEvent?.hasRSVPed ? (
-          <button className="px-3 py-2 bg-red-500 hover:bg-red-400 text-white rounded-md">
-            Has already RSVPed
-          </button>
-        ) : (
-          <button
-            className="px-3 py-2 bg-red-500 hover:bg-red-400 text-white rounded-md"
-            onClick={() => setIsOpen(true)}
-          >
-            RSVP
-          </button>
-        )} */}
+      <div className="mx-4">
         <RsvpModal event={findCurrEvent} />
       </div>
     </div>
