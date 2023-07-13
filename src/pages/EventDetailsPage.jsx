@@ -98,7 +98,7 @@ export default function EventDetailsPage() {
           </li>
         ))}
       </ul>
-      <div className="mx-4">
+      <div className="my-4">
         <RsvpModal event={findCurrEvent} />
       </div>
     </div>
