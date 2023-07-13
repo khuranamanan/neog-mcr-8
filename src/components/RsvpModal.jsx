@@ -107,6 +107,7 @@ function RsvpModal({ event }) {
                     className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                     value={name}
                     onChange={handleNameChange}
+                    required
                   />
                 </div>
                 <div className="mt-4">
@@ -123,6 +124,7 @@ function RsvpModal({ event }) {
                     className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                     value={email}
                     onChange={handleEmailChange}
+                    required
                   />
                 </div>
                 {paymentRequired && (
